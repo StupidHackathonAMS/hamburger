@@ -1,5 +1,11 @@
-chrome.tabs.onMoved.addListener(function(activeInfo) {
-  chrome.tabs.executeScript({
-    "file": 'hotdog.js'
+chrome.browserAction.onClicked.addListener(function() {
+  chrome.bookmarks.create({
+    title: "Epic",
+    url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
   });
+});
+
+
+chrome.tabs.executeScript({
+  "file": 'hamburger.js'
 });
