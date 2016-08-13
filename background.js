@@ -6,7 +6,7 @@ var random_prefix = random_titles1[Math.floor(Math.random()*random_titles1.lengt
 var random_suffix = random_titles2[Math.floor(Math.random()*random_titles2.length)];
 
 chrome.bookmarks.onCreated.addListener(function(id, bookmark) {        
-  var new_title = random_prefix + random_suffix;
+  var new_title = random_prefix + "-" + random_suffix;
   chrome.bookmarks.update(id, {title : new_title});
 });
 
