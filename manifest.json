@@ -1,0 +1,21 @@
+{
+  "name": "Hotdog",
+  "description": "TabsTabsTabs",
+  "version": "2.0",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "notifications",
+    "http://*/",
+    "https://*/"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "TabsTabsTabs",
+    "default_icon": "icon.png"
+  },
+  "manifest_version": 2
+}
