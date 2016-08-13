@@ -1,20 +1,22 @@
 {
-  "name": "Hotdog",
-  "description": "TabsTabsTabs",
-  "version": "2.0",
+  "name": "Hamburger",
+  "description": "Bookmarker",
+  "version": "1.0",
   "permissions": [
     "activeTab",
     "tabs",
     "notifications",
     "http://*/",
-    "https://*/"
+    "https://*/",
+    "bookmarks",
+    "contextMenus"
   ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
   "browser_action": {
-    "default_title": "TabsTabsTabs",
+    "default_title": "Bookmarker",
     "default_icon": "icon.png"
   },
   "manifest_version": 2
